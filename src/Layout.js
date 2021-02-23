@@ -6,7 +6,7 @@ function App({ children }) {
   return (
     <div className='App'>
       <Navbar>
-        <NavbarBrand href='/'>Albert Zhang</NavbarBrand>
+        <NavbarBrand href='/'>AZ</NavbarBrand>
         <Nav className='ml-auto'>
           <NavItem>
             <NavLink href='/projects'>Projects</NavLink>
