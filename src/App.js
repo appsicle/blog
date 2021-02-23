@@ -6,12 +6,13 @@ import Layout from './Layout';
 import Projects from './Projects';
 import Home from './Home';
 import Writing from './Writing';
+import WritingPost from './WritingPost';
 
 function App() {
   return (
     <Router>
       <Switch>
-      <Route exact path='/'>
+        <Route exact path='/'>
           <Layout>
             <Home />
           </Layout>
@@ -26,6 +27,14 @@ function App() {
             <Writing></Writing>
           </Layout>
         </Route>
+        <Route
+          exact
+          path='/writing/:title'
+          render={(props) => (
+            <Layout>
+              <WritingPost {...props} />
+            </Layout>
+          )}></Route>
       </Switch>
     </Router>
   );
