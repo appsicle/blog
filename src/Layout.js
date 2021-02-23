@@ -12,7 +12,7 @@ function App({ children }) {
             <NavLink href='/projects'>Projects</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink target="_blank" href={Resume}>Resume</NavLink>
+            <NavLink target="_blank" rel="noreferrer" href={Resume}>Resume</NavLink>
           </NavItem>
           <NavItem>
             <NavLink active href='/writing'>

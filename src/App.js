@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Projects from './Projects';
 import Home from './Home';
+import Writing from './Writing';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
           </Layout>
         </Route>
         <Route exact path='/writing'>
-          <Layout>writing</Layout>
+          <Layout>
+            <Writing></Writing>
+          </Layout>
         </Route>
       </Switch>
     </Router>
