@@ -1,0 +1,13 @@
+.card-container {
+  max-width: 300px;
+  margin: 40px;
+  margin-top: 80px;
+  text-align: center;
+  &-image { 
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
